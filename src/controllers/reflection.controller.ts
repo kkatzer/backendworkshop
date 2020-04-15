@@ -31,9 +31,7 @@ export class ReflectionController {
         description: 'Reflection model instance',
         content: {
           'application/json': {
-            schema: getModelSchemaRef(Reflection, {
-              exclude: ['creationTime']
-            })
+            schema: getModelSchemaRef(Reflection)
           }
         },
       },
